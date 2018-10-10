@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PertemuanKetujuh</string>
+    <string name="nama">Panji Sadewo</string>
+    <string name="user_name">user name</string>
+    <string name="password">password</string>
+    <string name="login_Button">Login</string>
+    <string name="infoProfile">Info</string>
+    <string name="name_person">Name : Panji Sadewo</string>
+    <string name="number_profile">: 082133736079</string>
+    <string name="message_perofile"> message me :)</string>
+    <string name="email_profile">: panji.8800@students.amikom.ac.id</string>
+    <string name="adres_person">Adrees : Yogyakarta</string>
+    <string name="status_person">Status : Collage Student</string>
+</resources>

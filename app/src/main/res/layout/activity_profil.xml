@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorForm"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/infoTab"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="127dp"
+        android:background="@color/infoTab"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/personImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_person_pin_black_24dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/phoneNumber"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_phone_black_24dp"
+        app:layout_constraintLeft_toLeftOf="@id/infoTab"
+        app:layout_constraintTop_toTopOf="@id/infoTab"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/messageImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_message_black_24dp"
+        app:layout_constraintLeft_toRightOf="@id/numbertxt"
+        app:layout_constraintTop_toTopOf="@id/phoneNumber"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/emailImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_mail_black_24dp"
+        app:layout_constraintLeft_toLeftOf="@id/infoTab"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumber"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/numbertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/number_profile"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/phoneNumber"
+        app:layout_constraintLeft_toRightOf="@id/phoneNumber"
+        app:layout_constraintTop_toTopOf="@id/phoneNumber" />
+
+    <TextView
+        android:id="@+id/messagetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/message_perofile"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/messageImg"
+        app:layout_constraintLeft_toRightOf="@id/messageImg"
+        app:layout_constraintTop_toTopOf="@id/messageImg" />
+
+    <TextView
+        android:id="@+id/emailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/email_profile"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/emailImg"
+        app:layout_constraintLeft_toRightOf="@id/emailImg"
+        app:layout_constraintTop_toTopOf="@id/emailImg" />
+
+    <TextView
+        android:id="@+id/infotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/infoProfile"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoTab" />
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/name_person"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infotxt" />
+
+    <TextView
+        android:id="@+id/addtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/adres_person"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nametxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_person"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addtxt" />
+
+</android.support.constraint.ConstraintLayout>
